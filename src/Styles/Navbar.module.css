@@ -1,0 +1,32 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 7vh;
+}
+.logo {
+  max-width: 40px;
+}
+.navbar_links {
+  list-style-type: none;
+}
+.link_item {
+  display: inline;
+  padding-right: 2rem;
+}
+.line {
+  opacity: 0.5;
+}
+.link_item a {
+  list-style: none;
+  text-decoration: none;
+  transition: opacity 0.25s ease-in-out;
+  color: #1f2537;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.link_item a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

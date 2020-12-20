@@ -1,0 +1,11 @@
+.wrapper {
+  background: #1f2537;
+  color: #efd148;
+  padding: 6rem 3rem;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  justify-items: center;
+}

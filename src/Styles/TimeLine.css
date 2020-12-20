@@ -1,0 +1,17 @@
+.VerticalTimeline {
+  background: #1f2537;
+}
+.icon {
+  max-width: 40px;
+  align-self: center;
+}
+span.vertical-timeline-element-icon.bounce-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.vertical-timeline-element-date {
+  text-align: left;
+  color: white;
+}

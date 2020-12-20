@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #1f2537;
+  min-height: 93vh;
+}
+.wrapper img {
+  text-align: center;
+  width: 350px;
+}
+.wrapper h2 {
+  color: #1f2537;
+  opacity: 0.75;
+}
+
+.wrapper .right_side {
+  padding: 5rem;
+  align-self: center;
+}

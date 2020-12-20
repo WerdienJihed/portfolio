@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 3rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  justify-items: center;
+  margin: 1rem 3rem;
+}
