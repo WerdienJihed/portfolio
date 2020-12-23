@@ -2,7 +2,9 @@ import styles from "./../Styles/Button.module.css";
 export function Button(props) {
   return (
     <div className={styles.button}>
-      <span>{props.value}</span>
+      <a href={props.link} target="_blank">
+        {props.value}
+      </a>
     </div>
   );
 }

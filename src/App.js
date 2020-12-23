@@ -1,23 +1,22 @@
 import "./App.css";
-import { Navbar } from "./Components/Navbar.js";
-import { LandingPage } from "./Components/LandingPage.js";
-import { Services } from "./Components/Services.js";
-import { Projects } from "./Components/Projects.js";
-import { Experience } from "./Components/Experience.js";
-import { Footer } from "./Components/Footer.js";
+import { Navbar } from "./Components/Navbar";
+import { Home } from "./Components/Home";
 import { ContactMe } from "./Components/ContactMe";
+import { Skills } from "./Components/Skills";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Navbar />
-      <LandingPage />
-      <Services />
-      <Projects />
-      <Experience />
-      <Footer /> */}
-      <ContactMe />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/contactMe" component={ContactMe} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

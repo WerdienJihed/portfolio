@@ -4,7 +4,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import bachelorsDegreeIcon from "./../assets/bachelors-degree.svg";
-import suitcaseIcon from "./../assets/suitcase.svg";
+import suitcaseIcon from "./../assets/work.svg";
+import internship from "./../assets/internship.svg";
 import "./../Styles/TimeLine.css";
 
 export function TimeLine(props) {
@@ -29,6 +30,24 @@ export function TimeLine(props) {
           .NET Developer (c#/WPF/ASP.NET) , integrating business processes and
           web API’s into Creatio platform , Working with Talend software (A
           Cloud Data Integration tool)
+        </p>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="jan 2017 - feb 2017"
+        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        icon={<img src={internship} alt="intership Icon" className="icon" />}
+      >
+        <h3 className="vertical-timeline-element-title">
+          Initiation intership
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+          - GALACTECH STUDIO -
+        </h4>
+        <p>
+          My first opportunity to experience working in a group and exploring
+          new technologies like Angular.js Framework and firebase.
         </p>
       </VerticalTimelineElement>
 

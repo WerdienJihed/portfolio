@@ -1,10 +1,11 @@
 import { Button } from "./Button";
 import styles from "./../Styles/Contact_me.module.css";
+import { SectionHeader } from "./SectionHeader";
 
 export function ContactMe() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.title}>Contact me </div>
+      <SectionHeader title="Contact me" dark="true" />
       <form action="" className={styles.form}>
         <div className={styles.inputBox}>
           <input type="text" name="" required="required" />

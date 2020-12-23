@@ -1,7 +1,6 @@
 .wrapper {
   background: #1f2537;
-  color: #efd148;
-  height: 100vh;
+  min-height: 93vh;
 }
 .form {
   width: 70%;
@@ -38,6 +37,7 @@ textarea {
   padding: 0 10px;
   z-index: 1;
   color: #000;
+  font-family: "Poppins", sans-serif;
 }
 
 .text {
@@ -67,6 +67,8 @@ input:focus ~ .text,
 input:valid ~ .text {
   top: -35px;
   left: -10px;
+  opacity: 0;
+  transition: 1s;
 }
 input:focus ~ .line,
 input:valid ~ .line {

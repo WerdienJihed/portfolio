@@ -9,8 +9,8 @@ export function Project(props) {
         <h2 className={styles.title}>{props.name}</h2>
         <p className={styles.description}>{props.description}</p>
         <div className={styles.buttons}>
-          <Button value="view live" />
-          <Button value="source code" />
+          <Button value="live" link={props.liveLink} />
+          <Button value="code" link={props.sourceCodeLink} />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .card {
-  width: 280px;
-  height: 360px;
+  width: 260px;
+  height: 350px;
   padding: 2rem 1rem;
   background: #ffffff;
   position: relative;
@@ -55,7 +55,7 @@
 }
 .card:hover img {
   transition: 1s;
-  opacity: 0.1;
+  opacity: 0.4;
 }
 .buttons {
   display: inline-grid;

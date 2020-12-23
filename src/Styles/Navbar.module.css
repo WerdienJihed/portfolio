@@ -9,24 +9,23 @@
   max-width: 40px;
 }
 .navbar_links {
-  list-style-type: none;
-}
-.link_item {
-  display: inline;
-  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 .line {
   opacity: 0.5;
+  margin: 0;
 }
-.link_item a {
+.link_item {
   list-style: none;
   text-decoration: none;
   transition: opacity 0.25s ease-in-out;
   color: #1f2537;
   font-size: 1.1rem;
-  font-weight: 600;
+  margin-right: 2rem;
 }
-.link_item a:hover {
+.link_item:hover {
   cursor: pointer;
   opacity: 0.5;
 }
