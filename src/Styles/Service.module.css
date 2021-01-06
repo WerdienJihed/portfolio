@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .card_container .card {
   position: relative;
-  cursor: pointer;
 }
 
 .card_container .card .face {

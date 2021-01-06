@@ -5,7 +5,14 @@
 }
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 2rem;
   justify-items: center;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+  .services > *:nth-child(3n) {
+    grid-column: span 2;
+    justify-self: center;
+  }
 }

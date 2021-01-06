@@ -1,5 +1,9 @@
-.VerticalTimeline {
-  background: #1f2537;
+.vertical-timeline-element-content p {
+  text-align: left;
+}
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  text-align: center;
 }
 .icon {
   max-width: 40px;
@@ -9,9 +13,14 @@ span.vertical-timeline-element-icon.bounce-in {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
 }
 .vertical-timeline-element-date {
   text-align: left;
   color: white;
+}
+
+@media (max-width: 1170px) {
+  .icon {
+    max-width: 30px;
+  }
 }

@@ -1,12 +1,18 @@
-.get_in_touch {
-  padding: 0.5rem 0;
+.wrapper {
+  background-color: #efd148;
+  color: #1f2537;
+}
+.container {
+  padding: 1rem;
+  max-width: 75%;
+  margin: auto;
+}
+.title {
+  margin-bottom: 1rem;
 }
 
-.social_media {
-  margin-bottom: 2rem;
-}
-
-.address_item > *,
-.social_media > * {
-  margin-right: 1rem;
+@media (max-width: 1025px) {
+  .container {
+    text-align: center;
+  }
 }

@@ -35,6 +35,20 @@ export function Projects() {
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },
+    {
+      name: "TEST",
+      description: "test",
+      image: app3,
+      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
+      liveLink: "https://expensify-application-project.herokuapp.com/",
+    },
+    {
+      name: "TEST",
+      description: "test",
+      image: app3,
+      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
+      liveLink: "https://expensify-application-project.herokuapp.com/",
+    },
   ];
   const projectsItems = projects.map((project) => (
     <Project

@@ -1,8 +1,8 @@
 import { Button } from "./Button";
-import styles from "./../Styles/Contact_me.module.css";
+import styles from "./../Styles/Contact.module.css";
 import { SectionHeader } from "./SectionHeader";
 
-export function ContactMe() {
+export function Contact() {
   return (
     <div className={styles.wrapper}>
       <SectionHeader title="Contact me" dark="true" />

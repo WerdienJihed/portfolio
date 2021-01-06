@@ -1,24 +1,13 @@
 import styles from "./../Styles/Get_in_touch.module.css";
-import { SocialMedia } from "./socialMedia";
+import { SocialMedia } from "./SocialMedia";
+import { Informations } from "./Informations";
 export function GetInTouch() {
   return (
-    <div className={styles.get_in_touch}>
-      <h1>Get in touch</h1>
-      <SocialMedia />
-      <div className={styles.addresses}>
-        <div className={styles.address_item}>
-          <i className="fas fa-phone-alt"></i>
-          +216 50802935
-        </div>
-        <div className={styles.address_item}>
-          <i className="fas fa-map-marker-alt"></i>
-          Tunisia , Djerba
-        </div>
-
-        <div className={styles.address_item}>
-          <i className="fas fa-envelope"></i>
-          informatique.jihed@gmail.com
-        </div>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <h1 className={styles.title}>Get in touch</h1>
+        <Informations />
+        <SocialMedia />
       </div>
     </div>
   );

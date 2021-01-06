@@ -1,8 +1,4 @@
-.wrapperExperience {
+.wrapper {
   background: #1f2537;
-  padding: 6rem 3rem;
-}
-
-.wrapperExperience .sectionHeader {
-  color: white;
+  padding: 3rem;
 }

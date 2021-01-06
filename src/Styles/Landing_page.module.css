@@ -1,8 +1,17 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(12, 1fr);
   color: #1f2537;
   min-height: 93vh;
+}
+.left_side {
+  grid-column: 2/5;
+  align-self: center;
+  text-align: center;
+}
+.right_side {
+  grid-column: 6/12;
+  align-self: center;
 }
 .wrapper img {
   width: 350px;
@@ -11,13 +20,24 @@
   color: #1f2537;
   opacity: 0.75;
 }
-.wrapper .left_side {
-  align-self: center;
-}
-.wrapper .right_side {
-  padding: 5rem;
-  align-self: center;
-}
+
 .right_side p {
   text-align: left;
+}
+.right_side SocialMedia {
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1025px) {
+  .wrapper {
+    grid-template-columns: none;
+  }
+  .left_side {
+    grid-column: none;
+  }
+  .right_side {
+    grid-column: none;
+    text-align: center;
+    padding: 0 5rem;
+  }
 }

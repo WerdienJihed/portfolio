@@ -1,16 +1,11 @@
-import styles from "./../Styles/Footer.module.css";
-import { GetInTouch } from "./GetInTouch";
-import { Articles } from "./Articles";
+import styles from "./../Styles/footer.module.css";
+import { TopFooter } from "./TopFooter";
+import { Copyright } from "./Copyright";
 export function Footer() {
   return (
-    <div className={styles.footer}>
-      <div className={styles.informations}>
-        <Articles />
-        <GetInTouch />
-      </div>
-      <div className={styles.copyright}>
-        <p>©2021 Copyright: werdien jihed</p>
-      </div>
+    <div className={styles.wrapper}>
+      <TopFooter />
+      <Copyright />
     </div>
   );
 }

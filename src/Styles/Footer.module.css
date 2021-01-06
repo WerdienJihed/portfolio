@@ -1,14 +1,4 @@
-.footer {
-  display: grid;
-  grid-template-rows: 6fr 1fr;
-  background-color: #ebc340;
+.wrapper {
+  margin: 0;
   text-align: left;
-}
-.footer .informations {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-}
-.footer .copyright {
-  text-align: center;
-  background: #896f12;
 }
