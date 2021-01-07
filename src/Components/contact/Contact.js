@@ -1,6 +1,6 @@
-import { Button } from "./Button";
-import styles from "./../Styles/Contact.module.css";
-import { SectionHeader } from "./SectionHeader";
+import { Button } from "../reusable/Button";
+import styles from "../../Styles/contact/Contact.module.css";
+import { SectionHeader } from "../reusable/SectionHeader";
 
 export function Contact() {
   return (

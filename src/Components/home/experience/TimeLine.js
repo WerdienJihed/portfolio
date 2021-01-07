@@ -3,10 +3,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import bachelorsDegreeIcon from "./../assets/bachelors-degree.svg";
-import suitcaseIcon from "./../assets/work.svg";
-import internship from "./../assets/internship.svg";
-import "./../Styles/TimeLine.css";
+import bachelorsDegreeIcon from "../../../assets/bachelors-degree.svg";
+import suitcaseIcon from "../../../assets/work.svg";
+import internship from "../../../assets/internship.svg";
+import "../../../Styles/home/experience/TimeLine.css";
 
 export function TimeLine(props) {
   return (

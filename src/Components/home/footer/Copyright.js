@@ -1,4 +1,4 @@
-import styles from "./../Styles/copyright.module.css";
+import styles from "../../../Styles/home/footer/copyright.module.css";
 export function Copyright() {
   return (
     <div className={styles.wrapper}>

@@ -1,4 +1,4 @@
-import styles from "./../Styles/informations.module.css";
+import styles from "../../../Styles/home/footer/informations.module.css";
 
 export function Informations() {
   return (

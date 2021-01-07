@@ -1,6 +1,6 @@
-import styles from "./../Styles/Landing_page.module.css";
-import photo from "./../assets/WerdienJihed.png";
-import { SocialMedia } from "./SocialMedia";
+import styles from "../../../Styles/home/landingPage/Landing_page.module.css";
+import photo from "../../../assets/WerdienJihed.png";
+import { SocialMedia } from "../../reusable/SocialMedia";
 
 export function LandingPage() {
   return (

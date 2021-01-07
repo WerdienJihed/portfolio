@@ -1,4 +1,4 @@
-import styles from "./../Styles/Section_header.module.css";
+import styles from "../../Styles/home/reusable/Section_header.module.css";
 export function SectionHeader(props) {
   return (
     <div className={styles.wrapper}>

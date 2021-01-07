@@ -1,5 +1,5 @@
-import { Button } from "./Button";
-import styles from "./../Styles/Project.module.css";
+import { Button } from "../../reusable/Button";
+import styles from "../../../Styles/home/projects/Project.module.css";
 
 export function Project(props) {
   return (

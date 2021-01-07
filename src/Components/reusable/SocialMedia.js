@@ -1,4 +1,4 @@
-import styles from "./../Styles/social_media.module.css";
+import styles from "../../Styles/home/reusable/social_media.module.css";
 export function SocialMedia() {
   return (
     <div className={styles.wrapper}>

@@ -1,4 +1,4 @@
-import styles from "./../Styles/Service.module.css";
+import styles from "../../../Styles/home/services/Service.module.css";
 export function Service(props) {
   return (
     <div className={styles.card_container}>

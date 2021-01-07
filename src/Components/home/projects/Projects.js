@@ -1,10 +1,10 @@
-import { SectionHeader } from "./SectionHeader";
+import { SectionHeader } from "../../reusable/SectionHeader";
 import { Project } from "./Project";
-import styles from "./../Styles/Projects.module.css";
-import Expensify from "./../assets/Expensify.png";
-import app1 from "./../assets/app1.jpg";
-import app2 from "./../assets/app2.jpg";
-import app3 from "./../assets/app3.jpg";
+import styles from "../../../Styles/home/projects/Projects.module.css";
+import Expensify from "../../../assets/Expensify.png";
+import app1 from "../../../assets/app1.jpg";
+import app2 from "../../../assets/app2.jpg";
+import app3 from "../../../assets/app3.jpg";
 export function Projects() {
   const projects = [
     {

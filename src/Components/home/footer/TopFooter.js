@@ -1,5 +1,5 @@
-import styles from "./../Styles/top_footer.module.css";
-import dotNetCoreLogo from "./../assets/dotNetCore.png";
+import styles from "../../../Styles/home/footer/top_footer.module.css";
+import dotNetCoreLogo from "../../../assets/dotNetCore.png";
 import { GetInTouch } from "./GetInTouch";
 export function TopFooter() {
   return (
