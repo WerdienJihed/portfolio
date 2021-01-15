@@ -5,7 +5,7 @@ export function Informations() {
     <div className={styles.wrapper}>
       <div className={styles.address_item}>
         <i className="fas fa-envelope"></i>
-        informatique.jihed@gmail.com
+        werdien.jihed1996@gmail.com
       </div>
       <div className={styles.address_item}>
         <i className="fas fa-map-marker-alt"></i>

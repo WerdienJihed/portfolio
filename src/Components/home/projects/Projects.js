@@ -4,7 +4,6 @@ import styles from "../../../Styles/home/projects/Projects.module.css";
 import Expensify from "../../../assets/Expensify.png";
 import app1 from "../../../assets/app1.jpg";
 import app2 from "../../../assets/app2.jpg";
-import app3 from "../../../assets/app3.jpg";
 export function Projects() {
   const projects = [
     {
@@ -22,36 +21,16 @@ export function Projects() {
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },
     {
-      name: "ExcelToDB",
+      name: "My portfolio ",
       description: "test",
       image: app2,
-      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "https://expensify-application-project.herokuapp.com/",
-    },
-    {
-      name: "Task manager",
-      description: "test",
-      image: app3,
-      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "https://expensify-application-project.herokuapp.com/",
-    },
-    {
-      name: "TEST",
-      description: "test",
-      image: app3,
-      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "https://expensify-application-project.herokuapp.com/",
-    },
-    {
-      name: "TEST",
-      description: "test",
-      image: app3,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },
   ];
   const projectsItems = projects.map((project) => (
     <Project
+      key={project.name}
       name={project.name}
       description={project.description}
       image={project.image}

@@ -55,3 +55,21 @@
   opacity: 0.5;
   color: #1f2537;
 }
+
+/*Tablets, Ipads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card_container .card .face {
+    width: 300px;
+    height: 200px;
+  }
+}
+/* Low Resolution Tablets, Mobiles */
+@media (min-width: 481px) and (max-width: 767px) {
+  .card_container .card .face {
+    width: 400px;
+    height: 300px;
+  }
+  .card_container .card .face.face2 {
+    transform: translateY(-200px);
+  }
+}

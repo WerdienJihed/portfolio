@@ -4,7 +4,7 @@ import styles from "../../../Styles/home/projects/Project.module.css";
 export function Project(props) {
   return (
     <div className={styles.card}>
-      <img src={props.image} />
+      <img src={props.image} alt="project screen shot" />
       <div className={styles.content}>
         <h2 className={styles.title}>{props.name}</h2>
         <p className={styles.description}>{props.description}</p>

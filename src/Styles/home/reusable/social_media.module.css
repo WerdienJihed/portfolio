@@ -23,3 +23,11 @@
 .fa-twitter-square {
   color: #1da1f2;
 }
+
+.anchor {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}

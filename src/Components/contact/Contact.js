@@ -1,31 +1,54 @@
-import { Button } from "../reusable/Button";
 import styles from "../../Styles/contact/Contact.module.css";
 import { SectionHeader } from "../reusable/SectionHeader";
+import emailjs from "emailjs-com";
 
 export function Contact() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_eulvkj5",
+        "template_1awqtxr",
+        e.target,
+        "user_nWw1UiTkwfEnStkpwGUHC"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div className={styles.wrapper}>
-      <SectionHeader title="Contact me" dark="true" />
-      <form action="" className={styles.form}>
+      <SectionHeader title="Contact me" />
+      <form className={styles.form} onSubmit={sendEmail}>
         <div className={styles.inputBox}>
-          <input type="text" name="" required="required" />
+          <input type="text" name="user_name" required="required" />
           <span className={styles.text}>Full Name</span>
           <span className={styles.line}></span>
         </div>
 
         <div className={styles.inputBox}>
-          <input type="text" name="" required="required" />
+          <input type="text" name="user_email" required="required" />
           <span className={styles.text}>Email</span>
+          <span className={styles.line}></span>
+        </div>
+        <div className={styles.inputBox}>
+          <input type="text" name="user_phone_number" required="required" />
+          <span className={styles.text}>phone number</span>
           <span className={styles.line}></span>
         </div>
 
         <div className={styles.textarea}>
-          <textarea required="required"></textarea>
+          <textarea required="required" name="user_message"></textarea>
           <span className={styles.text}>Type your message here ...</span>
           <span className={styles.line}></span>
         </div>
-
-        <Button value="Send" />
+        <input type="submit" value="Send" className={styles.submit_button} />
       </form>
     </div>
   );
