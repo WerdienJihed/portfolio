@@ -2,30 +2,31 @@ import { SectionHeader } from "../../reusable/SectionHeader";
 import { Project } from "./Project";
 import styles from "../../../Styles/home/projects/Projects.module.css";
 import Expensify from "../../../assets/Expensify.png";
-import app1 from "../../../assets/app1.jpg";
+import LeaveManagement from "../../../assets/Leave-management.png";
 import myPortfolio from "../../../assets/My Portfolio.png";
 export function Projects() {
   const projects = [
     {
       name: "Expensify",
-      description: "test",
+      description: "",
       image: Expensify,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },
     {
       name: "Leave management",
-      description: "tqsdfqsdf sdfqsdfest",
-      image: app1,
+      description: "",
+      image: LeaveManagement,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "https://expensify-application-project.herokuapp.com/",
+      liveLink: "",
     },
     {
-      name: "My portfolio ",
-      description: "my Portfolio",
+      name: "Werdien jihed portfolio",
+      description: "",
       image: myPortfolio,
-      sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "https://expensify-application-project.herokuapp.com/",
+      sourceCodeLink:
+        "https://github.com/WerdienJihed/Werdien-jihed---Portfolio",
+      liveLink: "https://werdienjihed.github.io/werdien-jihed-portfolio",
     },
   ];
   const projectsItems = projects.map((project) => (
