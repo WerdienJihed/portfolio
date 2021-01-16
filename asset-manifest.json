@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.348b93a1.chunk.css",
+    "main.js": "/portfolio/static/js/main.1749ec05.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1749ec05.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
+    "static/css/2.2aa38b9c.chunk.css": "/portfolio/static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.7d405008.chunk.js": "/portfolio/static/js/2.7d405008.chunk.js",
+    "static/js/2.7d405008.chunk.js.map": "/portfolio/static/js/2.7d405008.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.2aa38b9c.chunk.css.map": "/portfolio/static/css/2.2aa38b9c.chunk.css.map",
+    "static/css/main.348b93a1.chunk.css.map": "/portfolio/static/css/main.348b93a1.chunk.css.map",
+    "static/js/2.7d405008.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7d405008.chunk.js.LICENSE.txt",
+    "static/media/Leave-management.567759ad.png": "/portfolio/static/media/Leave-management.567759ad.png",
+    "static/media/My Portfolio.b6a5a212.png": "/portfolio/static/media/My Portfolio.b6a5a212.png",
+    "static/media/bachelors-degree.a750c083.svg": "/portfolio/static/media/bachelors-degree.a750c083.svg",
+    "static/media/dotNetCore.5f792e82.png": "/portfolio/static/media/dotNetCore.5f792e82.png",
+    "static/media/internship.cd95eb47.svg": "/portfolio/static/media/internship.cd95eb47.svg",
+    "static/media/logo.7f56c138.png": "/portfolio/static/media/logo.7f56c138.png",
+    "static/media/werdien jihed.af8acd26.png": "/portfolio/static/media/werdien jihed.af8acd26.png",
+    "static/media/work.09a9d867.svg": "/portfolio/static/media/work.09a9d867.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fed2963.js",
+    "static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.7d405008.chunk.js",
+    "static/css/main.348b93a1.chunk.css",
+    "static/js/main.1749ec05.chunk.js"
+  ]
+}
