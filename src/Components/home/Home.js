@@ -1,16 +1,19 @@
-import { LandingPage } from "./landingPage/LandingPage";
-import { Services } from "./services/Services";
-import { Projects } from "./projects/Projects";
-import { Experience } from "./experience/Experience";
-import { Footer } from "./footer/Footer";
+import { Route, Switch } from "react-router-dom";
+import { Navbar } from "./navbar/Navbar";
+import { LeandingPage } from "./LandingPage";
+import { Contact } from "../contact/Contact";
+import { NoMatch } from "../404/NoMatch";
+
 export function Home() {
   return (
     <div>
-      <LandingPage />
-      <Services />
-      <Projects />
-      <Experience />
-      <Footer />
+      <Navbar />
+
+      <Switch>
+        <Route exact path="/" component={LeandingPage} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NoMatch} />
+      </Switch>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Project } from "./Project";
 import styles from "../../../Styles/home/projects/Projects.module.css";
 import Expensify from "../../../assets/Expensify.png";
 import app1 from "../../../assets/app1.jpg";
-import app2 from "../../../assets/app2.jpg";
+import myPortfolio from "../../../assets/My Portfolio.png";
 export function Projects() {
   const projects = [
     {
@@ -22,8 +22,8 @@ export function Projects() {
     },
     {
       name: "My portfolio ",
-      description: "test",
-      image: app2,
+      description: "my Portfolio",
+      image: myPortfolio,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },

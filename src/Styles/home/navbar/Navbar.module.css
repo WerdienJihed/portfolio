@@ -5,17 +5,21 @@
 }
 
 .logo_container {
-  padding-left: 5rem;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 .logo {
-  max-width: 40px;
+  max-width: 35px;
 }
 .link {
   list-style: none;
   text-decoration: none;
   transition: opacity 0.25s ease-in-out;
   color: #1f2537;
-  padding-right: 5rem;
+  margin-right: 5rem;
+  font-size: 1.1rem;
 }
 .link:hover,
 .logo:hover {

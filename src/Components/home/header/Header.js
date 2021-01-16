@@ -1,8 +1,8 @@
-import styles from "../../../Styles/home/landingPage/Landing_page.module.css";
+import styles from "../../../Styles/home/header/Header.module.css";
 import photo from "../../../assets/werdien jihed.png";
 import { SocialMedia } from "../../reusable/SocialMedia";
 
-export function LandingPage() {
+export function Header() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.image_container}>
