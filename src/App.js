@@ -3,7 +3,7 @@ import { HashRouter } from "react-router-dom";
 import { Home } from "./Components/home/Home";
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <div className="App">
         <Home />
       </div>
