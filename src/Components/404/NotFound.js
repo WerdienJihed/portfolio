@@ -7,7 +7,7 @@ export function NotFound() {
       <div className={styles.error}>
         THE PAGE YOU WERE LOOKING FOR DOES NOT EXIST
       </div>
-      <Link to="/" className={styles.link}>
+      <Link to="/portfolio" className={styles.link}>
         Back home
       </Link>
     </div>
