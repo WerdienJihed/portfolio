@@ -1,6 +1,6 @@
-import styles from "../../Styles/404/no_match.module.css";
+import styles from "../../Styles/404/not_found.module.css";
 import { Link } from "react-router-dom";
-export function NoMatch() {
+export function NotFound() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.error_code}>404</div>
