@@ -11,7 +11,7 @@ export function Home() {
 
       <Switch>
         <Route exact path="/portfolio" component={LeandingPage} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/portfolio/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
     </div>

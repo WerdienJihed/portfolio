@@ -6,10 +6,10 @@ export function Navbar() {
   return (
     <div>
       <div className={styles.wrapper}>
-        <Link to="/" className={styles.logo_container}>
+        <Link to="/portfolio" className={styles.logo_container}>
           <img src={Logo} alt="logo" className={styles.logo} />
         </Link>
-        <Link to="/contact" className={styles.link}>
+        <Link to="/portfolio/contact" className={styles.link}>
           contact <i className="fas fa-angle-double-right"></i>
         </Link>
       </div>
