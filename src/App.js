@@ -1,13 +1,13 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Home } from "./Components/home/Home";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Home />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

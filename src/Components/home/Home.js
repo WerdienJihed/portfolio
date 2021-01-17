@@ -10,8 +10,8 @@ export function Home() {
       <Navbar />
 
       <Switch>
-        <Route exact path="/portfolio" component={LeandingPage} />
-        <Route path="/portfolio/contact" component={Contact} />
+        <Route exact path="/" component={LeandingPage} />
+        <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
     </div>
