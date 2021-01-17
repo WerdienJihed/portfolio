@@ -1,6 +1,8 @@
 import styles from "../../Styles/contact/Contact.module.css";
 import { SectionHeader } from "../reusable/SectionHeader";
 import emailjs from "emailjs-com";
+import toast from "toasted-notes";
+import "toasted-notes/src/styles.css";
 
 export function Contact() {
   function sendEmail(e) {
@@ -13,14 +15,13 @@ export function Contact() {
         e.target,
         "user_nWw1UiTkwfEnStkpwGUHC"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then(() => {
+        toast.notify(
+          <div style={{ color: "#22bb33" }}>
+            Thank you! Your message has been successfully sent.
+          </div>
+        );
+      });
   }
   return (
     <div className={styles.wrapper}>

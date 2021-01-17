@@ -24,3 +24,14 @@ a {
     inset 8px 8px 16px rgba(0, 0, 0, 0.1);
   color: #2f00ff;
 }
+
+.disabledButton {
+  width: 100px;
+  background-color: #cccccc;
+  color: #666666;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.2rem;
+}

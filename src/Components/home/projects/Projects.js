@@ -18,15 +18,14 @@ export function Projects() {
       description: "",
       image: LeaveManagement,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
-      liveLink: "",
+      liveLink: null,
     },
     {
       name: "Werdien jihed portfolio",
       description: "",
       image: myPortfolio,
-      sourceCodeLink:
-        "https://github.com/WerdienJihed/Werdien-jihed---Portfolio",
-      liveLink: "https://werdienjihed.github.io/werdien-jihed-portfolio",
+      sourceCodeLink: "https://github.com/WerdienJihed/portfolio/tree/main",
+      liveLink: "https://werdienjihed.github.io/portfolio/",
     },
   ];
   const projectsItems = projects.map((project) => (

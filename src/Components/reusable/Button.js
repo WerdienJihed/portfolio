@@ -1,10 +1,16 @@
 import styles from "../../Styles/home/reusable/Button.module.css";
 export function Button(props) {
-  return (
-    <div className={styles.button}>
-      <a href={props.link} target="_blank" rel="noreferrer">
-        {props.value}
-      </a>
-    </div>
-  );
+  let button;
+  if (props.link != null) {
+    button = (
+      <div className={styles.button}>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          {props.value}
+        </a>
+      </div>
+    );
+  } else {
+    button = <div className={styles.disabledButton}>{props.value}</div>;
+  }
+  return button;
 }
