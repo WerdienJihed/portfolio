@@ -4,7 +4,7 @@ import { SocialMedia } from "../../reusable/SocialMedia";
 
 export function Header() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Header">
       <div className={styles.image_container}>
         <img src={photo} alt="werdien jihed" />
       </div>

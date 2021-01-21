@@ -3,7 +3,7 @@ import { TimeLine } from "./TimeLine";
 import styles from "../../../Styles/home/experience/Experience.module.css";
 export function Experience() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Experience">
       <SectionHeader
         title="Experience"
         subTitle="Past and current jobs"

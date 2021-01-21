@@ -1,5 +1,5 @@
-import styles from "../../Styles/contact/Contact.module.css";
-import { SectionHeader } from "../reusable/SectionHeader";
+import styles from "../../../Styles/home/contact/contact.module.css";
+import { SectionHeader } from "../../reusable/SectionHeader";
 import emailjs from "emailjs-com";
 import toast from "toasted-notes";
 import "toasted-notes/src/styles.css";
@@ -24,7 +24,7 @@ export function Contact() {
       });
   }
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Contact">
       <SectionHeader title="Contact me" />
       <form className={styles.form} onSubmit={sendEmail}>
         <div className={styles.inputBox}>

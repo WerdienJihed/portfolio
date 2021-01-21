@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   color: #1f2537;
-  min-height: 93vh;
+  min-height: 100vh;
   padding: 0 5rem;
   align-items: center;
   justify-items: center;
@@ -41,11 +41,13 @@
   .wrapper {
     display: block;
     min-height: auto;
-    padding: 2rem 0;
+    padding: 7rem 0;
   }
-
   .description {
     text-align: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
+  }
+  .image_container {
+    width: 90%;
   }
 }

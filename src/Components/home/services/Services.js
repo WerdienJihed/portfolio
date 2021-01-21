@@ -3,7 +3,7 @@ import { Service } from "./Service.js";
 import styles from "../../../Styles/home/services/Services.module.css";
 export function Services() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Services">
       <SectionHeader title="Services" subTitle="what i do" dark="true" />
       <div className={styles.services}>
         <Service
