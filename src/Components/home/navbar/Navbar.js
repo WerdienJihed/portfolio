@@ -1,7 +1,7 @@
 import styles from "../../../Styles/home/navbar/Navbar.module.css";
 import Logo from "./../../../assets/logo.png";
 import { Link } from "react-scroll";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export function Navbar() {
   const [navbar, setNavbar] = useState(false);
