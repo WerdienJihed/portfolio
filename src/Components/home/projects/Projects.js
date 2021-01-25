@@ -1,6 +1,6 @@
 import { SectionHeader } from "../../reusable/SectionHeader";
 import { Project } from "./Project";
-import styles from "../../../Styles/home/projects/Projects.module.css";
+import styles from "../../../Styles/home/projects/projects.module.css";
 import Expensify from "../../../assets/Expensify.png";
 import LeaveManagement from "../../../assets/Leave-management.png";
 import myPortfolio from "../../../assets/My Portfolio.png";

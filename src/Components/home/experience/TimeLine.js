@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import bachelorsDegreeIcon from "../../../assets/bachelors-degree.svg";
 import suitcaseIcon from "../../../assets/work.svg";
 import internship from "../../../assets/internship.svg";
-import "../../../Styles/home/experience/TimeLine.css";
+import "../../../Styles/home/experience/timeLine.css";
 
 export function TimeLine(props) {
   return (

@@ -1,6 +1,6 @@
 import { SectionHeader } from "../../reusable/SectionHeader.js";
 import { Service } from "./Service.js";
-import styles from "../../../Styles/home/services/Services.module.css";
+import styles from "../../../Styles/home/services/services.module.css";
 export function Services() {
   return (
     <div className={styles.wrapper} id="Services">

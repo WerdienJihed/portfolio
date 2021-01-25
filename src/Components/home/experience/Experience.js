@@ -1,6 +1,6 @@
 import { SectionHeader } from "../../reusable/SectionHeader";
 import { TimeLine } from "./TimeLine";
-import styles from "../../../Styles/home/experience/Experience.module.css";
+import styles from "../../../Styles/home/experience/experience.module.css";
 export function Experience() {
   return (
     <div className={styles.wrapper} id="Experience">

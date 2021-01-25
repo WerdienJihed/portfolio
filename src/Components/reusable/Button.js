@@ -1,4 +1,4 @@
-import styles from "../../Styles/home/reusable/Button.module.css";
+import styles from "../../Styles/home/reusable/button.module.css";
 export function Button(props) {
   let button;
   if (props.link != null) {

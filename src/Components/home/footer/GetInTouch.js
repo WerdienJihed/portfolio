@@ -1,4 +1,4 @@
-import styles from "../../../Styles/home/footer/Get_in_touch.module.css";
+import styles from "../../../Styles/home/footer/get_in_touch.module.css";
 import { SocialMedia } from "../../reusable/SocialMedia";
 import { Informations } from "./Informations";
 export function GetInTouch() {

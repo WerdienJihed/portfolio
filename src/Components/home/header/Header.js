@@ -1,4 +1,4 @@
-import styles from "../../../Styles/home/header/Header.module.css";
+import styles from "../../../Styles/home/header/header.module.css";
 import photo from "../../../assets/werdien jihed.png";
 import { SocialMedia } from "../../reusable/SocialMedia";
 

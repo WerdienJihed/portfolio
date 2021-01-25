@@ -1,46 +1,63 @@
-import styles from "../../../Styles/home/navbar/Navbar.module.css";
+import { useState } from "react";
+import styles from "../../../Styles/home/navbar/navbar.module.css";
 import Logo from "./../../../assets/logo.png";
 import { Link } from "react-scroll";
-import React, { useState } from "react";
+import { useMediaQuery } from "./useMediaQuery";
 
 export function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+  let isOnMobileVersion = useMediaQuery("(max-width: 768px)");
 
+  const [navbarInScroll, setNavbarInScroll] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 30) {
-      setNavbar(true);
+      setNavbarInScroll(true);
     } else {
-      setNavbar(false);
+      setNavbarInScroll(false);
     }
   };
   window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className={navbar ? styles.navbarScroll : styles.navbar}>
-      <div className={styles.wrapper}>
+    <div
+      className={styles.navbar}
+      style={{ backgroundColor: navbarInScroll ? "#ebebebf5" : null }}
+    >
+      <div className={styles.container}>
         <Link to="Header" smooth={true} className={styles.link}>
           <img src={Logo} alt="logo" className={styles.logo} />
         </Link>
-        <div className={styles.navLinks}>
-          <Link to="Services" smooth={true} className={styles.link}>
-            Services
-          </Link>
-          <Link to="Projects" smooth={true} className={styles.link}>
-            Projects
-          </Link>
-          <Link to="Experience" smooth={true} className={styles.link}>
-            Experience
-          </Link>
-          <Link to="Contact" smooth={true} className={styles.link}>
-            Contact
-          </Link>
-        </div>
-        <div className={styles.burger}>
-          <div className={styles.line1}></div>
-          <div className={styles.line2}></div>
-          <div className={styles.line3}></div>
-        </div>
+        {navbarOpen || !isOnMobileVersion ? (
+          <div className={styles.navLinks}>
+            <Link to="Services" smooth={true} className={styles.link}>
+              Services
+            </Link>
+            <Link to="Projects" smooth={true} className={styles.link}>
+              Projects
+            </Link>
+            <Link to="Experience" smooth={true} className={styles.link}>
+              Experience
+            </Link>
+            <Link to="Contact" smooth={true} className={styles.link}>
+              Contact
+            </Link>
+          </div>
+        ) : null}
       </div>
+      {isOnMobileVersion ? (
+        <div
+          className={styles.burgerIconContaienr}
+          onClick={() => {
+            setNavbarOpen(!navbarOpen);
+          }}
+        >
+          {navbarOpen ? (
+            <i className="fas fa-caret-up fa-3x"></i>
+          ) : (
+            <i className="fas fa-caret-down fa-3x"></i>
+          )}
+        </div>
+      ) : null}
       <hr className={styles.line} />
     </div>
   );
