@@ -1,7 +1,8 @@
 import styles from "../../Styles/home/reusable/section_header.module.css";
+
 export function SectionHeader(props) {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-aos="zoom-in">
       <div
         className={styles.wrapper && props.dark ? styles.dark : styles.light}
       >

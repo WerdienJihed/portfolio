@@ -1,7 +1,12 @@
 import styles from "../../../Styles/home/services/service.module.css";
 export function Service(props) {
   return (
-    <div className={styles.card_container}>
+    <div
+      className={styles.card_container}
+      data-aos={props.dataAos}
+      data-aos-delay={props.dataAosDelay}
+      data-aos-duration={props.dataAosDuration}
+    >
       <div className={styles.card}>
         <div className={styles.face + " " + styles.face1}>
           <div className={styles.content}>

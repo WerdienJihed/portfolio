@@ -4,6 +4,7 @@ import styles from "../../../Styles/home/projects/projects.module.css";
 import Expensify from "../../../assets/Expensify.png";
 import LeaveManagement from "../../../assets/Leave-management.png";
 import myPortfolio from "../../../assets/My Portfolio.png";
+
 export function Projects() {
   const projects = [
     {
@@ -28,7 +29,7 @@ export function Projects() {
       liveLink: "https://werdienjihed.github.io/portfolio/",
     },
   ];
-  const projectsItems = projects.map((project) => (
+  const projectsItems = projects.map((project, index) => (
     <Project
       key={project.name}
       name={project.name}
@@ -36,6 +37,9 @@ export function Projects() {
       image={project.image}
       sourceCodeLink={project.sourceCodeLink}
       liveLink={project.liveLink}
+      dataAos="fade-up"
+      dataAosDelay={index * 200}
+      dataAosDuration="1000"
     />
   ));
   return (

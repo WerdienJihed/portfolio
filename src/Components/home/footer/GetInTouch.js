@@ -5,7 +5,9 @@ export function GetInTouch() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h1 className={styles.title}>Get in touch</h1>
+        <h1 className={styles.title} data-aos="zoom-in">
+          Get in touch
+        </h1>
         <Informations />
         <SocialMedia />
       </div>

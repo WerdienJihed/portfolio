@@ -27,24 +27,40 @@ export function Contact() {
     <div className={styles.wrapper} id="Contact">
       <SectionHeader title="Contact me" />
       <form className={styles.form} onSubmit={sendEmail}>
-        <div className={styles.inputBox}>
+        <div
+          className={styles.inputBox}
+          data-aos="fade-up-right"
+          data-aos-delay="0"
+        >
           <input type="text" name="user_name" required="required" />
           <span className={styles.text}>Full Name</span>
           <span className={styles.line}></span>
         </div>
 
-        <div className={styles.inputBox}>
+        <div
+          className={styles.inputBox}
+          data-aos="fade-up-right"
+          data-aos-delay="100"
+        >
           <input type="text" name="user_email" required="required" />
           <span className={styles.text}>Email</span>
           <span className={styles.line}></span>
         </div>
-        <div className={styles.inputBox}>
+        <div
+          className={styles.inputBox}
+          data-aos="fade-up-right"
+          data-aos-delay="200"
+        >
           <input type="text" name="user_phone_number" required="required" />
           <span className={styles.text}>phone number</span>
           <span className={styles.line}></span>
         </div>
 
-        <div className={styles.textarea}>
+        <div
+          className={styles.textarea}
+          data-aos="fade-up-right"
+          data-aos-delay="300"
+        >
           <textarea required="required" name="user_message"></textarea>
           <span className={styles.text}>Type your message here ...</span>
           <span className={styles.line}></span>

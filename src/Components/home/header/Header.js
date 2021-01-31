@@ -5,10 +5,18 @@ import { SocialMedia } from "../../reusable/SocialMedia";
 export function Header() {
   return (
     <div className={styles.wrapper} id="Header">
-      <div className={styles.image_container}>
+      <div
+        className={styles.image_container}
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <img src={photo} alt="werdien jihed" />
       </div>
-      <div className={styles.description}>
+      <div
+        className={styles.description}
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <h1>Werdien Jihed</h1>
         <h2> Curious and creative developer</h2>
         <p>

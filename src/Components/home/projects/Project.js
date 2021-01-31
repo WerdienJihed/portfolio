@@ -3,7 +3,12 @@ import styles from "../../../Styles/home/projects/project.module.css";
 
 export function Project(props) {
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      data-aos={props.dataAos}
+      data-aos-delay={props.dataAosDelay}
+      data-aos-duration={props.dataAosDuration}
+    >
       <img src={props.image} alt="project screen shot" />
       <div className={styles.content}>
         <h2 className={styles.title}>{props.name}</h2>

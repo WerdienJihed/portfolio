@@ -33,8 +33,13 @@
 .technlogies_table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr min-content;
   grid-gap: 0.5rem;
   justify-items: center;
+}
+
+.technlogies_table > *:nth-child(3n-2):nth-last-of-type(1) {
+  grid-column: span 3;
 }
 .icon {
   width: 48px;

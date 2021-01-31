@@ -6,41 +6,53 @@ export function TopFooter() {
     <div className={styles.wrapper}>
       <div className={styles.shape}>
         <div className={styles.container}>
-          <h1 className={styles.title}>Technologies i use</h1>
+          <h1 className={styles.title} data-aos="zoom-in">
+            Technologies i use
+          </h1>
           <div className={styles.technlogies_table}>
             <img
-              src="https://img.icons8.com/color/48/000000/c-sharp-logo.png"
-              alt="C#"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/javascript.png"
-              alt="javascript"
-            />
-            <img
-              src="https://img.icons8.com/color/48/000000/python.png"
-              alt="python"
-            />
-            <img src={dotNetCoreLogo} className={styles.icon} alt=".NET Core" />
-            <img
-              src="https://img.icons8.com/color/48/000000/react-native.png"
-              alt="react.js"
-            />
-            <img
-              src="https://img.icons8.com/color/48/fa314a/django.png"
-              alt="django"
+              src={dotNetCoreLogo}
+              className={styles.icon}
+              alt=".NET Core"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             />
 
             <img
+              src="https://img.icons8.com/color/48/000000/react-native.png"
+              alt="react.js"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+            <img
+              src="https://img.icons8.com/color/58/fa314a/django.png"
+              alt="django"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+            <img
               src="https://img.icons8.com/fluent/48/000000/adobe-photoshop.png"
               alt="photoshop"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             />
             <img
               src="https://img.icons8.com/color/48/000000/adobe-illustrator.png"
               alt="illustrator"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             />
             <img
               src="https://img.icons8.com/windows/48/fa314a/figma.png"
               alt="figma"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            />
+            <img
+              src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png"
+              alt="sql server"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             />
           </div>
         </div>

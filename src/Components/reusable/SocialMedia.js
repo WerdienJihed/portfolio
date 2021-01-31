@@ -1,4 +1,5 @@
 import styles from "../../Styles/home/reusable/social_media.module.css";
+
 export function SocialMedia() {
   return (
     <div className={styles.wrapper}>
@@ -9,6 +10,9 @@ export function SocialMedia() {
         aria-hidden="true"
         target="_blank"
         rel="noreferrer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
       >
         <span className={styles.anchor}>werdien jihed linkedin account</span>
       </a>
@@ -18,6 +22,9 @@ export function SocialMedia() {
         href="https://github.com/WerdienJihed"
         target="_blank"
         rel="noreferrer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
       >
         <span className={styles.anchor}>werdien jihed github account</span>
       </a>
@@ -27,6 +34,9 @@ export function SocialMedia() {
         href="https://www.facebook.com/werdien.jihed"
         target="_blank"
         rel="noreferrer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
       >
         <span className={styles.anchor}>werdien jihed facebook account</span>
       </a>
@@ -36,6 +46,9 @@ export function SocialMedia() {
         href="https://www.instagram.com/werdien_jihed/"
         target="_blank"
         rel="noreferrer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="400"
       >
         <span className={styles.anchor}>werdien jihed instagram account</span>
       </a>
@@ -45,6 +58,9 @@ export function SocialMedia() {
         href="https://twitter.com/werdien_jihed"
         target="_blank"
         rel="noreferrer"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
       >
         <span className={styles.anchor}>werdien jihed twitter account</span>
       </a>
