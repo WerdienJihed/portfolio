@@ -1,8 +1,8 @@
-.wrapper {
+.container {
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
-.wrapper > * {
+.container > * {
   font-size: 30px;
   text-decoration: none;
   margin-right: 10px;

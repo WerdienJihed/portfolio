@@ -1,9 +1,20 @@
-.wrapper {
+.container {
   padding: 3rem;
 }
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+  margin: 0 auto;
   justify-items: center;
+}
+
+/* mobile */
+@media (max-width: 481px) {
+  .container {
+    padding: 2rem 0;
+  }
+  .projects {
+    grid-gap: 2rem;
+  }
 }

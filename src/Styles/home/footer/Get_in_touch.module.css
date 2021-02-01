@@ -1,8 +1,8 @@
-.wrapper {
+.container {
   background-color: #efd148;
   color: #1f2537;
 }
-.container {
+.wrapper {
   padding: 1rem;
   max-width: 75%;
   margin: auto;
@@ -12,7 +12,7 @@
 }
 
 @media (max-width: 1025px) {
-  .container {
+  .wrapper {
     text-align: center;
   }
 }

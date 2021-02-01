@@ -24,7 +24,7 @@ export function Contact() {
       });
   }
   return (
-    <div className={styles.wrapper} id="Contact">
+    <div className={styles.container} id="Contact">
       <SectionHeader title="Contact me" />
       <form className={styles.form} onSubmit={sendEmail}>
         <div

@@ -37,7 +37,7 @@ export function Services() {
   ));
 
   return (
-    <div className={styles.wrapper} id="Services">
+    <div className={styles.container} id="Services">
       <SectionHeader title="Services" subTitle="what i do" dark="true" />
       <div className={styles.services}>{servivesArray}</div>
     </div>

@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background: #201e1b;
@@ -22,7 +22,7 @@
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
 }
-.container {
+.wrapper {
   padding: 1rem;
   max-width: 70%;
   margin: auto;
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 1025px) {
-  .wrapper {
+  .container {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
@@ -62,7 +62,7 @@
     border-right: 150px solid transparent;
     border-left: 150px solid transparent;
   }
-  .container {
+  .wrapper {
     padding: 1rem;
     max-width: 70%;
     margin: auto;

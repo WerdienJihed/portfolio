@@ -2,7 +2,7 @@ import styles from "../../../Styles/home/footer/informations.module.css";
 
 export function Informations() {
   return (
-    <div className={styles.wrapper}>
+    <>
       <div
         className={styles.address_item}
         data-aos="fade-right"
@@ -27,6 +27,6 @@ export function Informations() {
         <i className="fas fa-phone-alt"></i>
         +216 50802935
       </div>
-    </div>
+    </>
   );
 }

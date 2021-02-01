@@ -46,7 +46,7 @@ export function Projects() {
     />
   ));
   return (
-    <div className={styles.wrapper} id="Projects">
+    <div className={styles.container} id="Projects">
       <SectionHeader title="Projects" subTitle="Some of my recent work" />
       <div className={styles.projects}>{projectsItems}</div>
     </div>

@@ -3,9 +3,9 @@ import dotNetCoreLogo from "../../../assets/dotNetCore.png";
 import { GetInTouch } from "./GetInTouch";
 export function TopFooter() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
       <div className={styles.shape}>
-        <div className={styles.container}>
+        <div className={styles.wrapper}>
           <h1 className={styles.title} data-aos="zoom-in">
             Technologies i use
           </h1>

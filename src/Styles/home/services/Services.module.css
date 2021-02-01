@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   background: #1f2537;
   color: #efd148;
   padding: 6rem 3rem;
@@ -15,5 +15,15 @@
   .services > *:nth-child(3n) {
     grid-column: span 2;
     justify-self: center;
+  }
+}
+
+/* mobile */
+@media (max-width: 481px) {
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+  .services {
+    grid-gap: 0;
   }
 }

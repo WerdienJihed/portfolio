@@ -2,7 +2,7 @@ import styles from "../../Styles/home/reusable/social_media.module.css";
 
 export function SocialMedia() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
       <a
         className="fa fa-linkedin-square"
         style={{ color: "#007bb5" }}

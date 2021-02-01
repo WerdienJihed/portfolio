@@ -3,8 +3,8 @@ import { SocialMedia } from "../../reusable/SocialMedia";
 import { Informations } from "./Informations";
 export function GetInTouch() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
         <h1 className={styles.title} data-aos="zoom-in">
           Get in touch
         </h1>
