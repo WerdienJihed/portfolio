@@ -6,7 +6,7 @@ const services = [
   {
     id: 0,
     title: "DEVELOPEMENT",
-    subtitle: "I building websites and applications",
+    subTitle: "I build websites and applications",
     icon: "fas fa-code",
   },
   {

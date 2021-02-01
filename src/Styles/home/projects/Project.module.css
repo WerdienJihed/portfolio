@@ -59,6 +59,7 @@
   opacity: 0.4;
 }
 .buttons {
+  margin-top: 2rem;
   display: inline-grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;

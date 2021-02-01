@@ -9,21 +9,24 @@ export function Projects() {
   const projects = [
     {
       name: "Expensify",
-      description: "",
+      description:
+        "Application for expense management , tools i used in this project : react.js,redux,firebase,jest,sass",
       image: Expensify,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: "https://expensify-application-project.herokuapp.com/",
     },
     {
       name: "Leave management",
-      description: "",
+      description:
+        "Application handles employee vacation requests , tools i used in this project : ASP.NET,entity framework,SQL,bootstrap",
       image: LeaveManagement,
       sourceCodeLink: "https://github.com/WerdienJihed/expensify-app",
       liveLink: null,
     },
     {
       name: "Werdien jihed portfolio",
-      description: "",
+      description:
+        "My portfolio is a way to demonstrate my competence and  showcases my work , tools i used in this projects (react.js)",
       image: myPortfolio,
       sourceCodeLink: "https://github.com/WerdienJihed/portfolio/tree/main",
       liveLink: "https://werdienjihed.github.io/portfolio/",
