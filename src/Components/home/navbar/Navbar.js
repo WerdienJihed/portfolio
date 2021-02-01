@@ -24,9 +24,12 @@ export function Navbar() {
       style={{ backgroundColor: navbarInScroll ? "#ebebebf5" : null }}
     >
       <div className={styles.container}>
-        <Link to="Header" smooth={true} className={styles.link}>
-          <img src={Logo} alt="logo" className={styles.logo} />
-        </Link>
+        {isOnMobileVersion && navbarInScroll ? null : (
+          <Link to="Header" smooth={true} className={styles.link}>
+            <img src={Logo} alt="logo" className={styles.logo} />
+          </Link>
+        )}
+
         {navbarOpen || !isOnMobileVersion ? (
           <div className={styles.navLinks}>
             <Link to="Services" smooth={true} className={styles.link}>
