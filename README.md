@@ -12,7 +12,7 @@
 ### Pages - Sections - Components
 
 - [ ] Layout
-  - [ ] Navbar
+  - [X] Navbar
   - [ ] Footer
 - [ ] Home page
   - [ ] Hero
