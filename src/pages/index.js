@@ -1,5 +1,13 @@
-import * as React from "react"
-
+import React from "react";
+import Layout from "../components/Layout";
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <Layout>
+      <div>Home</div>
+    </Layout>
+  );
+}
+
+export function Head() {
+  return <title>Werdien Jihed - Portfolio | Home </title>;
 }

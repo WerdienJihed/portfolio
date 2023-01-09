@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
+:root {
+  --camel: #bb9457ff;
+  --rich-black-fogra-39: #070707ff;
+  --maximum-blue-purple: #afbbf2ff;
+  --purple-navy: #585481ff;
+  --yellow-orange: #fea82fff;
+}
+/* minimal css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  font-family: "Martian Mono", monospace;
+}
