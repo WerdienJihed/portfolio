@@ -1,0 +1,132 @@
+:root {
+  --item-dimensions: 70px;
+  --distance: 70px;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.6s;
+  z-index: 1000;
+}
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon-active {
+  transform: translate(calc(-50vw + 35px), calc(50vh - 35px));
+}
+
+.line {
+  margin: 0px;
+  padding: 0px;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.6s;
+}
+
+.icon-active .line1 {
+  width: 50%;
+  height: 4px;
+  transform: rotate(25deg) translate(23px);
+  border-radius: 0% 30% 30% 0%;
+}
+.icon-active .line2 {
+  height: 4px;
+  border-radius: 0% 50% 50% 0%;
+}
+.icon-active .line3 {
+  width: 50%;
+  height: 4px;
+  transform: rotate(-25deg) translate(23px);
+  border-radius: 0% 30% 30% 0%;
+}
+
+.nav-link {
+  position: absolute;
+  width: var(--item-dimensions);
+  height: var(--item-dimensions);
+  top: 50%;
+  left: 50%;
+  list-style: none;
+  background-color: #efefef;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 0;
+  box-shadow: 0 19px 19px 0 rgb(0 0 0 / 30%), 0 15px 6px 0 rgb(0 0 0 / 22%);
+  transition: all 0.6s;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-link-active:nth-child(1) {
+  visibility: initial;
+  scale: 1;
+  transform: rotate(90deg)
+    translate(
+      calc((var(--distance) + var(--item-dimensions)) * -1),
+      calc(var(--item-dimensions) / 2)
+    )
+    rotate(-90deg);
+}
+.nav-link-active:nth-child(2) {
+  scale: 1;
+  transform: rotate(90deg)
+    translate(calc(var(--item-dimensions) * -1 / 2), calc(var(--distance) * -1))
+    rotate(-90deg);
+}
+.nav-link-active:nth-child(3) {
+  scale: 1;
+  transform: rotate(90deg)
+    translate(var(--distance), calc(var(--item-dimensions) / 2)) rotate(-90deg);
+}
+.nav-link-active:nth-child(4) {
+  scale: 1;
+  transform: rotate(90deg)
+    translate(
+      calc(var(--item-dimensions) * -1 / 2),
+      calc(var(--distance) + var(--item-dimensions))
+    )
+    rotate(-90deg);
+}
+
+@media (width >320px) {
+  :root {
+    --item-dimensions: 80px;
+    --distance: 80px;
+  }
+}
+@media (width >375px) {
+  :root {
+    --item-dimensions: 85px;
+    --distance: 85px;
+  }
+}
+@media (width >425px) {
+  :root {
+    --item-dimensions: 90px;
+    --distance: 90px;
+  }
+}
+@media (width >768px) {
+  :root {
+    --item-dimensions: 100px;
+    --distance: 100px;
+  }
+}
+@media (width >1024px) {
+  :root {
+    --item-dimensions: 120px;
+    --distance: 120px;
+  }
+}
