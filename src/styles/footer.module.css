@@ -1,0 +1,30 @@
+.footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.information {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  /* gap: 30px; */
+}
+
+.address-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copy-right {
+  background-color: #000;
+  padding: 1rem;
+  text-align: center;
+}
