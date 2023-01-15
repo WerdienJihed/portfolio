@@ -12,8 +12,8 @@
 ### Pages - Sections - Components
 
 - [ ] Layout
-  - [X] Navbar
-  - [ ] Footer
+  - [x] Navbar
+  - [x] Footer
 - [ ] Home page
   - [ ] Hero
   - [ ] Projects
