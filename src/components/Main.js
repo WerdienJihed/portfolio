@@ -87,8 +87,11 @@ const Main = () => {
             </a>
           </div>
           <div className={styles.buttonsContainer}>
-            <button style={{ marginTop: "25px" }} className={styles.button}>
-              Keep reading
+            <button className={styles.keepReadingBtn}>
+              <span className={styles.circle} aria-hidden="true">
+                <span className={`${styles.icon} ${styles.arrow}`}></span>
+              </span>
+              <span className={styles.buttonText}>Keep reading</span>
             </button>
           </div>
         </div>
