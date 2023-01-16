@@ -13,8 +13,8 @@
 - [ ] Layout
   - [x] Navbar
   - [x] Footer
-- [ ] Home page
-  - [ ] Hero
+- [x] Home page
+  - [x] Hero
   - [ ] Projects
     - [ ] Project card
   - [ ] Experience timeline
