@@ -5,8 +5,8 @@ import * as styles from "../styles/navbar.module.css";
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
   useEffect(() => {
-    if (isActive) document.querySelector(".main").classList.add("main-blur");
-    else document.querySelector(".main").classList.remove("main-blur");
+    if (isActive) document.querySelector("main").classList.add("main-blur");
+    else document.querySelector("main").classList.remove("main-blur");
   }, [isActive]);
 
   return (
@@ -15,6 +15,7 @@ const Navbar = () => {
         <div
           className={`${styles.icon} ${isActive ? styles.iconActive : null}`}
           onClick={() => setActive(!isActive)}
+          onKeyDown={() => setActive(!isActive)}
         >
           <div className={`${styles.line} ${styles.line1}`}></div>
           <div className={`${styles.line} ${styles.line2}`}></div>

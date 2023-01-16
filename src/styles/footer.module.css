@@ -9,22 +9,34 @@
 
 .information {
   padding: 1rem;
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-
-  /* gap: 30px; */
 }
 
 .address-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  text-align: center;
 }
 
 .copy-right {
   background-color: #000;
   padding: 1rem;
   text-align: center;
+}
+
+@media (width >= 768px) {
+  .information {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .address-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .information {
+    width: 60%;
+  }
 }

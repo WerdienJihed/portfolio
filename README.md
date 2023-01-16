@@ -2,7 +2,6 @@
 
 - [ ] Create a favicon
 - [ ] Create a logo
-- [ ] Put images in place
 - [x] Choose fonts
 - [x] Choose a color palette
 - [x] CSS resets
