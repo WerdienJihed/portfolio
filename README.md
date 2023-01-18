@@ -17,7 +17,7 @@
   - [x] Hero
   - [x] Projects
     - [x] Project card
-  - [ ] Experience timeline
+  - [x] Experience timeline
 - [ ] Contact page
 - [ ] Single project page
   - [ ] Setup emailjs
@@ -31,6 +31,5 @@
 # Other
 
 - [ ] Preview and download resume
-- [ ] Support for dark mode
 - [ ] Support for french language
 - [ ] Improve accessibility

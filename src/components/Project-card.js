@@ -7,14 +7,16 @@ import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import * as styles from "../styles/project-card.module.css";
 
 export default function ProjectCard({ name, description, technologies }) {
-  const iconsArray = technologies.map((item) => {
+  const iconsArray = technologies.map((item, index) => {
     switch (item) {
       case "html":
-        return <FontAwesomeIcon icon={faHtml5} size="2x" />;
+        return <FontAwesomeIcon key={index} icon={faHtml5} size="2x" />;
       case "react":
-        return <FontAwesomeIcon icon={faReact} size="2x" />;
+        return <FontAwesomeIcon key={index} icon={faReact} size="2x" />;
       default:
-        return <FontAwesomeIcon icon={faQuestionCircle} size="2x" />;
+        return (
+          <FontAwesomeIcon key={index} icon={faQuestionCircle} size="2x" />
+        );
     }
   });
   return (

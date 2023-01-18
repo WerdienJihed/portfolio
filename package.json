@@ -5,7 +5,7 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "deploy": "git push & npm build",
+    "deploy": "git push & npm run build & netlify deploy --prod",
     "clean": "gatsby clean"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "gatsby-source-filesystem": "^5.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-vertical-timeline-component": "^3.6.0"
   }
 }

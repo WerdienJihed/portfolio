@@ -38,3 +38,8 @@ body {
 .main-blur {
   filter: blur(5px);
 }
+
+/* overriding time line component padding */
+.vertical-timeline {
+  padding: 7em 0px !important;
+}
