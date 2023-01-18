@@ -5,6 +5,7 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
+    "deploy": "git push & npm build",
     "clean": "gatsby clean"
   },
   "dependencies": {

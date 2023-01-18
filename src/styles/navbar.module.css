@@ -9,7 +9,6 @@
   align-items: center;
   top: 30px;
   right: 30px;
-  /* background-color: var(--rich-black-fogra-39); */
   background-color: var(--purple-navy);
   width: 70px;
   height: 70px;
@@ -66,11 +65,7 @@
   top: 50%;
   left: 50%;
   list-style: none;
-  /* background-color: #efefef; */
-  /* color: rgb(0, 0, 0); */
-
   background-color: var(--purple-navy);
-  /* color: var(--yellow-orange); */
   color: #fff;
   border-radius: 50%;
   display: flex;

@@ -19,13 +19,13 @@
 .projects-container {
   display: grid;
   margin: 100px 0;
-  grid-gap: 2rem;
+  grid-gap: 5rem;
   place-items: center;
 }
 
 @media (width >= 768px) {
   .projects-container {
-    display: grid;
+    margin: 100px 25px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
