@@ -10,17 +10,16 @@
 
 ### Pages - Sections - Components
 
-- [ ] Layout
+- [x] Layout
   - [x] Navbar
   - [x] Footer
 - [x] Home page
   - [x] Hero
-  - [ ] Projects
-    - [ ] Project card
+  - [x] Projects
+    - [x] Project card
   - [ ] Experience timeline
-- [ ] Projects page
-  - [ ] Single project page
 - [ ] Contact page
+- [ ] Single project page
   - [ ] Setup emailjs
 - [ ] 404 Page
 

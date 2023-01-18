@@ -1,0 +1,37 @@
+.container {
+  padding: 1rem;
+  background-color: var(--purple-navy);
+  min-height: 50vh;
+  color: #fff;
+}
+
+.section-title {
+  color: var(--camel);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #fff;
+  text-align: center;
+}
+
+.projects-container {
+  display: grid;
+  margin: 100px 0;
+  grid-gap: 2rem;
+  place-items: center;
+}
+
+@media (width >= 768px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

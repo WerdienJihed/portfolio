@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +10,8 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import * as styles from "../styles/main.module.css";
-const Main = () => {
+
+export default function Main() {
   return (
     <main className={styles.main}>
       <div className={styles.imageContainer}>
@@ -87,17 +89,10 @@ const Main = () => {
             </a>
           </div>
           <div className={styles.buttonsContainer}>
-            <button className={styles.keepReadingBtn}>
-              <span className={styles.circle} aria-hidden="true">
-                <span className={`${styles.icon} ${styles.arrow}`}></span>
-              </span>
-              <span className={styles.buttonText}>Keep reading</span>
-            </button>
+            <Button />
           </div>
         </div>
       </div>
     </main>
   );
-};
-
-export default Main;
+}

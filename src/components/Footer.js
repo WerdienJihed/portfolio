@@ -6,7 +6,7 @@ import {
   faMapMarkerAlt,
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.information}>
@@ -38,6 +38,4 @@ const Footer = () => {
       <p className={styles.copyRight}>©2021 Copyright: werdien jihed</p>
     </footer>
   );
-};
-
-export default Footer;
+}

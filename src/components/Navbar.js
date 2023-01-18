@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import * as styles from "../styles/navbar.module.css";
-const Navbar = () => {
+
+export default function Navbar() {
   const [isActive, setActive] = useState(false);
   useEffect(() => {
     if (isActive) document.querySelector("main").classList.add("main-blur");
@@ -13,13 +14,19 @@ const Navbar = () => {
     <>
       <nav>
         <div
-          className={`${styles.icon} ${isActive ? styles.iconActive : null}`}
-          onClick={() => setActive(!isActive)}
-          onKeyDown={() => setActive(!isActive)}
+          className={`${styles.iconContainer} ${
+            isActive ? styles.iconActive : null
+          }`}
         >
-          <div className={`${styles.line} ${styles.line1}`}></div>
-          <div className={`${styles.line} ${styles.line2}`}></div>
-          <div className={`${styles.line} ${styles.line3}`}></div>
+          <div
+            className={styles.icon}
+            onClick={() => setActive(!isActive)}
+            onKeyDown={() => setActive(!isActive)}
+          >
+            <div className={`${styles.line} ${styles.line1}`}></div>
+            <div className={`${styles.line} ${styles.line2}`}></div>
+            <div className={`${styles.line} ${styles.line3}`}></div>
+          </div>
         </div>
       </nav>
       <div>
@@ -54,6 +61,4 @@ const Navbar = () => {
       </div>
     </>
   );
-};
-
-export default Navbar;
+}
