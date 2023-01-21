@@ -6,8 +6,8 @@ import * as styles from "../styles/navbar.module.css";
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
   useEffect(() => {
-    if (isActive) document.querySelector("main").classList.add("main-blur");
-    else document.querySelector("main").classList.remove("main-blur");
+    // if (isActive) document.querySelector("main").classList.add("main-blur");
+    // else document.querySelector("main").classList.remove("main-blur");
   }, [isActive]);
 
   return (

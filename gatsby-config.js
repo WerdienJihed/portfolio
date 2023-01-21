@@ -1,6 +1,8 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    "gatsby-plugin-mdx",
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -9,6 +11,12 @@ module.exports = {
         },
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `projects`,
+        path: `${__dirname}/projects`,
+      },
+    },
   ],
 };
