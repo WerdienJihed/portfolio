@@ -15,7 +15,7 @@ export default function Project({ data }) {
         </div>
         <div className={styles.projectDescription}>
           <h2 className={styles.projectName}>{data.mdx.frontmatter.title}</h2>
-          <div className={styles.projectArticle}>{data.mdx.excerpt}</div>
+          <div>{data.mdx.body}</div>
         </div>
       </div>
     </Layout>
@@ -34,7 +34,7 @@ export const query = graphql`
           }
         }
       }
-      excerpt
+      body
     }
   }
 `;

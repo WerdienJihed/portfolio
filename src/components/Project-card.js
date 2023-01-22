@@ -1,22 +1,30 @@
 import React from "react";
 import Button from "./Button.js";
 import ProjectImage from "../../static/project.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import CIcon from "@coreui/icons-react";
+import {
+  cibReact,
+  cibGatsby,
+  cibHtml5,
+  cibCss3,
+  cilWarning,
+} from "@coreui/icons";
+
 import * as styles from "../styles/project-card.module.css";
 
 export default function ProjectCard({ name, description, technologies }) {
   const iconsArray = technologies.map((item, index) => {
     switch (item) {
       case "html":
-        return <FontAwesomeIcon key={index} icon={faHtml5} size="2x" />;
+        return <CIcon key={index} icon={cibHtml5} width={25} />;
+      case "css":
+        return <CIcon key={index} icon={cibCss3} width={25} />;
       case "react":
-        return <FontAwesomeIcon key={index} icon={faReact} size="2x" />;
+        return <CIcon key={index} icon={cibReact} swidth={25} />;
+      case "gatsbyjs":
+        return <CIcon key={index} icon={cibGatsby} width={25} />;
       default:
-        return (
-          <FontAwesomeIcon key={index} icon={faQuestionCircle} size="2x" />
-        );
+        return <CIcon key={index} icon={cilWarning} width={25} />;
     }
   });
   return (

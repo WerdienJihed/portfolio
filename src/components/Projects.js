@@ -1,52 +1,39 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import ProjectCard from "./Project-card.js";
 import * as styles from "../styles/projects.module.css";
 
 export default function Projects() {
-  const projects = [
-    {
-      index: "1",
-      name: "Project 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-    {
-      index: "2",
-      name: "Project 2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-    {
-      index: "3",
-      name: "Project 3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-    {
-      index: "4",
-      name: "Project 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-    {
-      index: "5",
-      name: "Project 2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-    {
-      index: "6",
-      name: "Project 3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatibus tempora sint, qui doloribus aut libero recusandae molestias reiciendis atque dolore dolores veniam? Ducimus illo vel tempore distinctio tenetur molestiae?...",
-      technologies: ["html", "react"],
-    },
-  ];
+  const data = useStaticQuery(graphql`
+    query {
+      allMdx {
+        nodes {
+          id
+          frontmatter {
+            title
+            description
+            technologies
+            image_alt
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 800)
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const projects = data.allMdx.nodes.map((item) => ({
+    id: item.id,
+    title: item.frontmatter.title,
+    description: item.frontmatter.description,
+    image: item.frontmatter.image,
+    image_alt: item.frontmatter.image_alt,
+    technologies: item.frontmatter.technologies.split(","),
+  }));
+
   return (
     <section className={styles.container}>
       <h1 className={styles.sectionTitle}>Projects</h1>
@@ -54,7 +41,7 @@ export default function Projects() {
       <div className={styles.projectsContainer}>
         {projects.map((project) => (
           <ProjectCard
-            key={project.index.toString()}
+            key={project.id}
             name={project.name}
             description={project.description}
             technologies={project.technologies}
