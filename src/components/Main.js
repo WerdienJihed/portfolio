@@ -89,7 +89,7 @@ export default function Main() {
             </a>
           </div>
           <div className={styles.buttonsContainer}>
-            <Button />
+            <Button content="Keep reading" />
           </div>
         </div>
       </div>

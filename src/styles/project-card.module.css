@@ -39,7 +39,7 @@
 .content-wrapper {
   padding: 0rem 2rem;
 }
-.name {
+.title {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;

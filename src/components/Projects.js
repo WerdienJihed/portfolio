@@ -11,6 +11,7 @@ export default function Projects() {
           id
           frontmatter {
             title
+            slug
             description
             technologies
             image_alt
@@ -28,6 +29,7 @@ export default function Projects() {
   const projects = data.allMdx.nodes.map((item) => ({
     id: item.id,
     title: item.frontmatter.title,
+    slug: item.frontmatter.slug,
     description: item.frontmatter.description,
     image: item.frontmatter.image,
     image_alt: item.frontmatter.image_alt,
@@ -42,9 +44,10 @@ export default function Projects() {
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
-            name={project.name}
+            title={project.title}
             description={project.description}
             technologies={project.technologies}
+            slug={project.slug}
           />
         ))}
       </div>
