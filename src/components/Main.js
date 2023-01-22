@@ -9,6 +9,8 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import scrollTo from "gatsby-plugin-smoothscroll";
+
 import * as styles from "../styles/main.module.css";
 
 export default function Main() {
@@ -89,7 +91,10 @@ export default function Main() {
             </a>
           </div>
           <div className={styles.buttonsContainer}>
-            <Button content="Keep reading" />
+            <Button
+              content="Keep reading"
+              callbackFunction={() => scrollTo("#projects-section")}
+            />
           </div>
         </div>
       </div>
