@@ -1,25 +1,21 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "gatsby";
 import * as styles from "../styles/navbar.module.css";
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
-  useEffect(() => {
-    // if (isActive) document.querySelector("main").classList.add("main-blur");
-    // else document.querySelector("main").classList.remove("main-blur");
-  }, [isActive]);
 
   return (
     <>
       <nav>
         <div
-          className={`${styles.iconContainer} ${
-            isActive ? styles.iconActive : null
+          className={`${styles.buttonContainer} ${
+            isActive ? styles.buttonActive : null
           }`}
         >
           <div
-            className={styles.icon}
+            className={styles.button}
             onClick={() => setActive(!isActive)}
             onKeyDown={() => setActive(!isActive)}
           >
@@ -29,35 +25,32 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div>
-        <li
-          className={`${styles.navLink} ${
-            isActive ? styles.navLinkActive : null
-          }`}
+      <div
+        className={`${styles.linksContainer} ${
+          isActive ? styles.linksContainerActive : null
+        }`}
+      >
+        <Link
+          to="/"
+          className={styles.link}
+          onClick={() => setActive(!isActive)}
         >
-          <p href="#">Home</p>
-        </li>
-        <li
-          className={`${styles.navLink} ${
-            isActive ? styles.navLinkActive : null
-          }`}
+          Home
+        </Link>
+        <Link
+          to="/contact"
+          className={styles.link}
+          onClick={() => setActive(!isActive)}
         >
-          <p href="#">About</p>
-        </li>
-        <li
-          className={`${styles.navLink} ${
-            isActive ? styles.navLinkActive : null
-          }`}
+          Contact
+        </Link>
+        <Link
+          to="/resume"
+          className={styles.link}
+          onClick={() => setActive(!isActive)}
         >
-          <p href="#">Contact</p>
-        </li>
-        <li
-          className={`${styles.navLink} ${
-            isActive ? styles.navLinkActive : null
-          }`}
-        >
-          <p href="#">Resume</p>
-        </li>
+          Resume
+        </Link>
       </div>
     </>
   );
