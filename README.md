@@ -18,9 +18,9 @@
   - [x] Projects
     - [x] Project card
   - [x] Experience timeline
-- [ ] Contact page
-- [ ] Single project page
-  - [ ] Setup emailjs
+- [x] Contact page
+- [x] Single project page
+- [ ] Setup emailjs
 - [ ] 404 Page
 
 # Testing
