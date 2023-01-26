@@ -31,5 +31,6 @@
 # Other
 
 - [ ] Preview and download resume
+  - [x] Preview page
 - [ ] Support for french language
 - [ ] Improve accessibility

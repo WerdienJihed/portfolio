@@ -26,7 +26,7 @@ export default function ProjectCard({
       case "css":
         return <CIcon key={index} icon={cibCss3} width={25} />;
       case "react":
-        return <CIcon key={index} icon={cibReact} swidth={25} />;
+        return <CIcon key={index} icon={cibReact} width={25} />;
       case "gatsbyjs":
         return <CIcon key={index} icon={cibGatsby} width={25} />;
       default:
