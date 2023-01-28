@@ -30,7 +30,6 @@
 
 # Other
 
-- [ ] Preview and download resume
-  - [x] Preview page
+- [x] Download resume
 - [ ] Support for french language
 - [ ] Improve accessibility

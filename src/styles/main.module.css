@@ -24,7 +24,34 @@
 
 .buttons-container {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0px;
+}
+
+.download-resume-button {
+  margin-top: 1rem;
+  padding: 0.7em 1em;
+  border: none;
+  border-radius: 16px;
+}
+
+.download-resume-button span {
+  margin-right: 0.3em;
+}
+.download-resume-button:hover {
+  cursor: pointer;
+}
+.download-resume-button:hover .download-icon {
+  animation: animate 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 @media (width >= 768px) {

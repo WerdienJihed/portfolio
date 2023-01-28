@@ -9,11 +9,24 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import scrollTo from "gatsby-plugin-smoothscroll";
-
+import resumeURL from "/static/resume.pdf";
 import * as styles from "../styles/main.module.css";
 
 export default function Main() {
+  const handleDownloadResume = () => {
+    fetch(resumeURL).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "werdien-jihed-resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <main className={styles.main}>
       <div className={styles.imageContainer}>
@@ -95,6 +108,16 @@ export default function Main() {
               content="Keep reading"
               callbackFunction={() => scrollTo("#projects-section")}
             />
+            <button
+              className={styles.downloadResumeButton}
+              onClick={handleDownloadResume}
+            >
+              <span>Download resume</span>
+              <FontAwesomeIcon
+                icon={faDownload}
+                className={styles.downloadIcon}
+              />
+            </button>
           </div>
         </div>
       </div>
