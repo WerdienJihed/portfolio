@@ -6,6 +6,11 @@
 - [x] Choose a color palette
 - [x] CSS resets
 
+# Additional setup
+
+- [ ] Setup emailjs
+- [ ] Animations
+
 # Structure :
 
 ### Pages - Sections - Components
@@ -20,8 +25,7 @@
   - [x] Experience timeline
 - [x] Contact page
 - [x] Single project page
-- [ ] Setup emailjs
-- [ ] 404 Page
+- [x] 404 Page
 
 # Testing
 
@@ -33,3 +37,4 @@
 - [x] Download resume
 - [ ] Support for french language
 - [ ] Improve accessibility
+- [ ] Improve SEO
