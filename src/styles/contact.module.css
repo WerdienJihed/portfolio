@@ -1,6 +1,5 @@
 .container {
   min-height: calc(100vh - var(--footer-height));
-  margin-top: var(--navbar-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +47,7 @@
     #f8cdda 51%,
     #1d2b64 100%
   );
-  padding: 15px 45px;
+  padding: 10px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;

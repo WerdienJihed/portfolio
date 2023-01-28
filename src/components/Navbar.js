@@ -2,6 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "gatsby";
 import * as styles from "../styles/navbar.module.css";
+import { downloadResume } from "../utils/utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faContactCard,
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
@@ -30,27 +37,29 @@ export default function Navbar() {
           isActive ? styles.linksContainerActive : null
         }`}
       >
-        <Link
-          to="/"
-          className={styles.link}
-          onClick={() => setActive(!isActive)}
-        >
-          Home
-        </Link>
-        <Link
-          to="/contact"
-          className={styles.link}
-          onClick={() => setActive(!isActive)}
-        >
-          Contact
-        </Link>
-        <Link
-          to="/resume"
-          className={styles.link}
-          onClick={() => setActive(!isActive)}
-        >
-          Resume
-        </Link>
+        <div className={styles.linkWrapper}>
+          <Link
+            to="/"
+            className={styles.link}
+            onClick={() => setActive(!isActive)}
+          >
+            <FontAwesomeIcon icon={faHome} />
+            <span>Home</span>
+          </Link>
+          <Link
+            to="/contact"
+            className={styles.link}
+            onClick={() => setActive(!isActive)}
+          >
+            <FontAwesomeIcon icon={faContactCard} />
+
+            <span>Contact</span>
+          </Link>
+          <div className={styles.link} onClick={() => downloadResume()}>
+            <FontAwesomeIcon icon={faDownload} />
+            <span>Resume</span>
+          </div>
+        </div>
       </div>
     </>
   );

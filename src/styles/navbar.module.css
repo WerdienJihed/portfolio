@@ -3,19 +3,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   background-color: var(--purple-navy);
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   transition: all 0.6s;
   z-index: 1000;
 }
 
 .button {
-  width: 40px;
-  height: 25px;
+  width: 25px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,20 +32,19 @@
 }
 
 .button-active .line1 {
-  width: 50%;
+  width: 80%;
   height: 3px;
-  transform: rotate(23deg) translate(18px);
+  transform: rotate(25deg) translate(10px);
   border-radius: 50%;
 }
 .button-active .line2 {
   height: 3px;
-  width: 90%;
   border-radius: 50%;
 }
 .button-active .line3 {
-  width: 50%;
+  width: 80%;
   height: 3px;
-  transform: rotate(-23deg) translate(18px);
+  transform: rotate(-25deg) translate(10px);
   border-radius: 50%;
 }
 
@@ -56,7 +55,7 @@
   top: 0;
   left: 0;
   background: var(--purple-navy);
-  clip-path: circle(20px at calc(100% - 70px) 70px);
+  clip-path: circle(10px at calc(100% - 50px) 50px);
   transition: all 0.6s ease-in-out;
   display: flex;
   justify-content: center;
@@ -71,8 +70,14 @@
   margin-bottom: 2rem;
   font-size: 26px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+}
+.link:hover {
+  cursor: pointer;
+}
+.link span {
+  margin-left: 10px;
 }
 
 .links-container-active {

@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import ProjectCard from "./Project-card.js";
 import * as styles from "../styles/projects.module.css";
+import SectionHeader from "./SectionHeader.js";
 
 export default function Projects() {
   const data = useStaticQuery(graphql`
@@ -38,8 +39,11 @@ export default function Projects() {
 
   return (
     <section className={styles.container} id="projects-section">
-      <h1 className={styles.sectionTitle}>Projects</h1>
-      <h3 className={styles.sectionSubtitle}>Some of my recent work</h3>
+      <SectionHeader
+        title="Projects"
+        subtitle="Some of my recent work"
+        switchColors={true}
+      />
       <div className={styles.projectsContainer}>
         {projects.map((project) => (
           <ProjectCard

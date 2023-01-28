@@ -1,5 +1,5 @@
 .main {
-  padding: 3.5rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .main h1 {
@@ -15,12 +15,6 @@
   align-items: center;
   justify-content: center;
 }
-.social-media-container {
-  text-align: center;
-}
-.social-media-item {
-  margin-right: 10px;
-}
 
 .buttons-container {
   text-align: center;
@@ -29,9 +23,9 @@
 
 .download-resume-button {
   margin-top: 1rem;
-  padding: 0.7em 1em;
+  padding: 0.5rem 1.2rem;
   border: none;
-  border-radius: 16px;
+  border-radius: 1.625rem;
 }
 
 .download-resume-button span {
@@ -82,10 +76,20 @@
   .content-wrapper > * {
     margin-top: 2rem;
   }
-  .social-media-container {
-    text-align: left;
-  }
+
   .buttons-container {
     text-align: left;
+  }
+  .download-resume-button {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .main {
+    padding: 0;
+  }
+  .content-wrapper {
+    width: 600px;
   }
 }

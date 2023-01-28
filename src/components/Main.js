@@ -2,31 +2,13 @@ import React from "react";
 import Button from "./Button";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithubSquare,
-  faFacebookSquare,
-  faInstagramSquare,
-  faTwitterSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import SocialMedia from "./SocialMedia";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import resumeURL from "/static/resume.pdf";
+import { downloadResume } from "../utils/utils";
 import * as styles from "../styles/main.module.css";
 
 export default function Main() {
-  const handleDownloadResume = () => {
-    fetch(resumeURL).then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "werdien-jihed-resume.pdf";
-        alink.click();
-      });
-    });
-  };
-
   return (
     <main className={styles.main}>
       <div className={styles.imageContainer}>
@@ -45,64 +27,7 @@ export default function Main() {
             non-standard solution and I am always looking for new knowledge
             horizons.
           </p>
-          <div className={styles.socialMediaContainer}>
-            <a
-              className={styles.socialMediaItem}
-              href="https://www.linkedin.com/in/werdien-jihed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} color="#007bb5" size="2x" />
-            </a>
-            <a
-              className={styles.socialMediaItem}
-              href="https://github.com/WerdienJihed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faGithubSquare}
-                color="#211f1f"
-                size="2x"
-              />
-            </a>
-            <a
-              className={styles.socialMediaItem}
-              href="https://www.facebook.com/werdien.jihed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faFacebookSquare}
-                color="#4267b2"
-                size="2x"
-              />
-            </a>
-            <a
-              className={styles.socialMediaItem}
-              href="https://www.instagram.com/werdien.jihed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faInstagramSquare}
-                color="#e4405f"
-                size="2x"
-              />
-            </a>
-            <a
-              className={styles.socialMediaItem}
-              href="https://twitter.com/werdien_jihed"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faTwitterSquare}
-                color="#1da1f2"
-                size="2x"
-              />
-            </a>
-          </div>
+          <SocialMedia />
           <div className={styles.buttonsContainer}>
             <Button
               content="Keep reading"
@@ -110,9 +35,9 @@ export default function Main() {
             />
             <button
               className={styles.downloadResumeButton}
-              onClick={handleDownloadResume}
+              onClick={() => downloadResume()}
             >
-              <span>Download resume</span>
+              <span>Resume</span>
               <FontAwesomeIcon
                 icon={faDownload}
                 className={styles.downloadIcon}

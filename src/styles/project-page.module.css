@@ -1,6 +1,5 @@
 .container {
   min-height: calc(100vh - var(--footer-height));
-  margin-top: var(--navbar-height);
 }
 .project-description {
   padding: 1rem;

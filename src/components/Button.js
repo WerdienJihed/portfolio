@@ -7,7 +7,7 @@ export default function Button({ content, callbackFunction }) {
   };
   return (
     <button
-      className={styles.keepReadingBtn}
+      className={styles.button}
       onClick={() => handleClick(callbackFunction)}
     >
       <span className={styles.circle} aria-hidden="true">

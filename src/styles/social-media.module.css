@@ -1,0 +1,17 @@
+.social-media-container {
+  text-align: center;
+}
+.social-media-item {
+  margin-right: 1rem;
+}
+
+@media (width >= 768px) {
+  .social-media-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+}

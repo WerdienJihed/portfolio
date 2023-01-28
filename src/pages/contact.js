@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout.js";
+import SocialMedia from "../components/SocialMedia.js";
 import * as styles from "../styles/contact.module.css";
 export default function contact() {
   return (
@@ -7,6 +8,7 @@ export default function contact() {
       <div className={styles.container}>
         <div className={styles.formWrapper}>
           <h2 className={styles.title}>Contact me</h2>
+          <SocialMedia />
           <div className={styles.inputElement}>
             <label htmlFor="full-name" className={styles.label}>
               Full Name
