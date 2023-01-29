@@ -1,6 +1,6 @@
 # Basic setup
 
-- [ ] Create a favicon
+- [x] Create a favicon
 - [ ] Create a logo
 - [x] Choose fonts
 - [x] Choose a color palette
