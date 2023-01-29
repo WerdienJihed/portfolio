@@ -6,6 +6,7 @@
 }
 .title {
   text-align: center;
+  color: var(--purple-navy);
 }
 .form-wrapper {
   width: 90%;
@@ -43,9 +44,9 @@
   width: 100%;
   background-image: linear-gradient(
     to right,
-    #1d2b64 0%,
-    #f8cdda 51%,
-    #1d2b64 100%
+    var(--purple-navy) 20%,
+    var(--yellow-orange) 51%,
+    var(--purple-navy) 100%
   );
   padding: 10px 45px;
   text-align: center;

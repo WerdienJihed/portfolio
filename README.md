@@ -8,7 +8,7 @@
 
 # Additional setup
 
-- [ ] Setup emailjs
+- [x] Setup emailjs
 - [ ] Animations
 
 # Structure :
